@@ -30,7 +30,7 @@ target "image" {
 target "image-local" {
   inherits = ["image"]
   output = ["type=docker"]
-  tags = ["${APP}:${VERSION}"]
+  tags = ["${APP}:alpine-${VERSION}"]
 }
 
 target "image-all" {

@@ -6,9 +6,8 @@ USER root
 RUN \
     apk add --no-cache \
         bash \
-        envstub \
+        envsubst \
         curl \
     && rm -rf /tmp/*
-COPY . /
 USER nobody:nogroup
 ENTRYPOINT ["/usr/bin/bash"]

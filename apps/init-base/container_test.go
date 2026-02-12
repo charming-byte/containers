@@ -9,6 +9,6 @@ import (
 
 func Test(t *testing.T) {
 	ctx := context.Background()
-	image := testhelpers.GetTestImage("ghcr.io/charming-byte/init-base:alpine-3.23")
-	testhelpers.TestCommandSucceeds(t, ctx, image, nil, "/usr/bin/bash")
+	image := testhelpers.GetTestImage("ghcr.io/charming-byte/init-base:rolling")
+	testhelpers.TestCommandSucceeds(t, ctx, image, nil, "/bin/bash")
 }

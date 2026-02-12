@@ -10,4 +10,4 @@ RUN \
         curl \
     && rm -rf /tmp/*
 USER nobody:nogroup
-ENTRYPOINT ["/usr/bin/bash"]
+ENTRYPOINT ["/bin/bash"]

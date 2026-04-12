@@ -5,7 +5,7 @@ variable "APP" {
 }
 
 variable "VERSION" {
-  // renovate: datasource=repology depName=alpine_edge/deluge
+  // renovate: datasource=repology depName=alpine_3_23/deluge
   default = "2.2.0-r1"
 }
 

@@ -1,16 +1,16 @@
 target "docker-metadata-action" {}
 
 variable "APP" {
-  default = "esphome"
+  default = "plex-next"
 }
 
 variable "VERSION" {
-  // renovate: datasource=pypi depName=esphome
-  default = "2026.3.3"
+  // renovate: datasource=custom.plex depName=plex versioning=loose
+  default = "1.43.1.10611-1e34174b1"
 }
 
 variable "SOURCE" {
-  default = "https://github.com/esphome/esphome"
+  default = "https://github.com/plexinc/pms-docker"
 }
 
 group "default" {

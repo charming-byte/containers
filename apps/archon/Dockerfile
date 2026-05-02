@@ -1,6 +1,7 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/coleam00/archon:${VERSION}
+# renovate: datasource=docker depName=ghcr.io/coleam00/Archon
+FROM ghcr.io/coleam00/archon:0.3.10
 ARG VERSION
 
 USER root

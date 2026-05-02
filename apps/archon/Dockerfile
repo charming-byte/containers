@@ -12,7 +12,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     jq \
     && rm -rf /var/lib/apt/lists/*
 
-RUN gh extension install github/gh-copilot
 RUN npm install -g tsx prettier @openai/codex
 
 USER appuser

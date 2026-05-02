@@ -8,7 +8,6 @@ USER root
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ripgrep \
-    software-properties-common \
     npm \
     fd-find \
     jq \

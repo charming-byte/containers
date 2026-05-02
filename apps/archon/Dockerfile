@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     fd-find \
     jq \
     && npm install npm@latest -g \
-    && npm install n @openai/codex prettier -g \
+    && npm install n @openai/codex mariozechner/pi-coding-agent prettier -g \
     && rm -rf /var/lib/apt/lists/*
 
 USER appuser
